@@ -3,9 +3,9 @@ pragma solidity ^0.4.24;
 // ----------------------------------------------------------------------------
 // 'ProofClaim' token contract
 //
-// Deployed to : 0x682CE09f96398802d758a00591b5885541046F6b
-// Symbol      : SearsClaim#16
-// Name        : Sears Holdings Corporation 18-23538 Claim #16
+// Deployed to : [[Creditor Ethereum Address]]
+// Symbol      : [[Debtor]]Claim#[[number]]
+// Name        : [[Debtor]] [[Case Number]] Claim #[[number]]
 // Total supply: 100
 // Decimals    : 18
 // ----------------------------------------------------------------------------
@@ -109,12 +109,12 @@ contract ProofClaim is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     
     constructor() public {
-        symbol = "SearsClaim#16";
-        name = "Sears Holdings Corporation 18-23538 Claim#16";
+        symbol = "[[Debtor]]Claim#[[number]]";
+        name = "[[Debtor]] [[Case Number]] Claim #[[number]]";
         decimals = 18;
         _totalSupply = 100000000000000000000;
-        balances[0x682CE09f96398802d758a00591b5885541046F6b] = _totalSupply;
-        emit Transfer(address(0), 0x682CE09f96398802d758a00591b5885541046F6b, _totalSupply);
+        balances[[[Creditor Ethereum Address]]] = _totalSupply;
+        emit Transfer(address(0), [[Creditor Ethereum Address]], _totalSupply);
     }
 
     // ------------------------------------------------------------------------
