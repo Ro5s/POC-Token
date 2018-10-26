@@ -57,7 +57,7 @@ contract MasterPOC {
 // ----------------------------------------------------------------------------
 // 'ProofClaim' token contract
 //
-// Deployed to : 0x682CE09f96398802d758a00591b5885541046F6b
+// Deployed to : [[Bankruptcy Clerk Ethereum Address]]
 // Symbol      : POC
 // Name        : ProofClaim
 // Total supply: 100
@@ -167,8 +167,8 @@ contract ProofClaim is ERC20Interface, Owned, SafeMath {
         name = "ProofClaim";
         decimals = 18;
         _totalSupply = 100000000000000000000;
-        balances[0x682CE09f96398802d758a00591b5885541046F6b] = _totalSupply;
-        emit Transfer(address(0), 0x682CE09f96398802d758a00591b5885541046F6b, _totalSupply);
+        balances[Bankruptcy Clerk Ethereum Address] = _totalSupply;
+        emit Transfer(address(0), Bankruptcy Clerk Ethereum Address, _totalSupply);
     }
 
     // ------------------------------------------------------------------------
