@@ -167,8 +167,8 @@ contract ProofClaim is ERC20Interface, Owned, SafeMath {
         name = "ProofClaim";
         decimals = 18;
         _totalSupply = 100000000000000000000;
-        balances[Bankruptcy Clerk Ethereum Address] = _totalSupply;
-        emit Transfer(address(0), Bankruptcy Clerk Ethereum Address, _totalSupply);
+        balances[[[Bankruptcy Clerk Ethereum Address]]] = _totalSupply;
+        emit Transfer(address(0), [[Bankruptcy Clerk Ethereum Address]], _totalSupply);
     }
 
     // ------------------------------------------------------------------------
