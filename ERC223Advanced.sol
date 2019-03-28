@@ -567,9 +567,9 @@ contract MigratoryToken is HoldersToken {
 contract ERC223Advanced is MigratoryToken {
 	using SafeMath for uint256;
 
-	//! Token name FollowCoin
+	//! Token name set by constructor
 	string public name;
-	//! Token symbol FLLW
+	//! Token symbol set by constructor
 	string public symbol;
 	//! Token decimals, 18
 	uint8 public decimals;
