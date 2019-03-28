@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >0.4.23 <0.6.0;
 
 contract ERC223AdvancedFactory {
     address[] public contracts;
@@ -26,7 +26,7 @@ contract ERC223AdvancedFactory {
         public
         returns(address newContract)
     {
-        ERC223Advanced c = new ERC223Advanced();
+        ERC223Advanced c = new ERC223Advanced(name, symbol);
         contracts.push(c);
         lastContractAddress = address(c);
         emit newERC223AdvancedContract(c);
@@ -617,7 +617,7 @@ contract ERC223Advanced is MigratoryToken {
 
 	/*!	Contructor
 	 */
-	function GenerateToken(string _name, string _symbol) public {
+	constructor(string _name, string _symbol) public {
 		name = _name;
 		symbol = _symbol;
 		decimals = 18;
