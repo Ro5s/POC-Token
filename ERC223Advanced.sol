@@ -562,7 +562,6 @@ contract MigratoryToken is HoldersToken {
 	event Migrate(address indexed owner, uint256 value);
 }
 
-// File: contracts/FollowCoin.sol
 
 contract ERC223Advanced is MigratoryToken {
 	using SafeMath for uint256;
